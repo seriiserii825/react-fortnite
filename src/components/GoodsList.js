@@ -1,9 +1,9 @@
 import GoodsItem from "./GoodsItem";
-const GoodsList = ({ goods }) => {
+const GoodsList = ({ goods, addToCart }) => {
   return (
     <div className="goods-list">
       {goods.map((item) => (
-        <GoodsItem key={item.id} {...item} />
+        <GoodsItem addToCartFunc={addToCart}  key={item.id} {...item} />
       ))}
     </div>
   );

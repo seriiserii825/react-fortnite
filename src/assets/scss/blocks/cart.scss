@@ -1,0 +1,21 @@
+.cart {
+  position: fixed;
+  top: 7rem;
+  right: 3rem;
+  padding: 1rem 2rem;
+  color: white;
+  background-color: blueviolet;
+  z-index: 1000;
+  cursor: pointer;
+  transition: all .4s;
+  &:hover {
+	background-color: darken(blueviolet, 10%);
+  }
+  span {
+	position: relative;
+	top: -1.2rem;
+	right: -0.4rem;
+	font-size: 1.4rem;
+	font-weight: bold;
+  }
+}
